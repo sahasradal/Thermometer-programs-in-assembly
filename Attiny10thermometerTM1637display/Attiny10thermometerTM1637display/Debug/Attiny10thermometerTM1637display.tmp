@@ -1,0 +1,101 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATtiny10"</DEVICE>
+ <WORKING_DIR>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc\tn10def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\Debug\Attiny10thermometerTM1637display.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Attiny10thermometerTM1637display.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Attiny10thermometerTM1637display.map</FILE>
+  <FILE>Attiny10thermometerTM1637display.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <PAD><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>77</LINE></PAD>
+  <presence><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>78</LINE></presence>
+  <minussign><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>79</LINE></minussign>
+  <firstdigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>80</LINE></firstdigit>
+  <seconddigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>81</LINE></seconddigit>
+  <thirddigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>82</LINE></thirddigit>
+  <firstplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>83</LINE></firstplace>
+  <secplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>84</LINE></secplace>
+  <thirdplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>85</LINE></thirdplace>
+  <fourthplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>86</LINE></fourthplace>
+  <SCRATCHPAD><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>87</LINE></SCRATCHPAD>
+  <reset><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>91</LINE></reset>
+  <main_loop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>96</LINE></main_loop>
+  <measure><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>362</LINE></measure>
+  <printtemp><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>100</LINE></printtemp>
+  <command1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>139</LINE></command1>
+  <spitx><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>203</LINE></spitx>
+  <printchar><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>214</LINE></printchar>
+  <command3><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>144</LINE></command3>
+  <stop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>159</LINE></stop>
+  <start><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>150</LINE></start>
+  <us10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>469</LINE></us10>
+  <SPI><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>168</LINE></SPI>
+  <tx><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>170</LINE></tx>
+  <hi><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>187</LINE></hi>
+  <minus1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>223</LINE></minus1>
+  <letterC><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>228</LINE></letterC>
+  <space><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>233</LINE></space>
+  <print><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>239</LINE></print>
+  <fontminus><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>286</LINE></fontminus>
+  <ASCII0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>252</LINE></ASCII0>
+  <fontC><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>282</LINE></fontC>
+  <fontspace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>287</LINE></fontspace>
+  <font0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>270</LINE></font0>
+  <multiply><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>246</LINE></multiply>
+  <adddecimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>259</LINE></adddecimal>
+  <font1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>271</LINE></font1>
+  <font2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>272</LINE></font2>
+  <font3><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>273</LINE></font3>
+  <font4><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>274</LINE></font4>
+  <font5><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>275</LINE></font5>
+  <font6><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>276</LINE></font6>
+  <font7><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>277</LINE></font7>
+  <font8><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>278</LINE></font8>
+  <font9><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>279</LINE></font9>
+  <fonta><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>280</LINE></fonta>
+  <fontb><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>281</LINE></fontb>
+  <fontd><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>283</LINE></fontd>
+  <fonte><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>284</LINE></fonte>
+  <fontf><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>285</LINE></fontf>
+  <calc_fraction><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>292</LINE></calc_fraction>
+  <getout><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>309</LINE></getout>
+  <clrnexit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>313</LINE></clrnexit>
+  <fmultiply><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>303</LINE></fmultiply>
+  <f_command><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>321</LINE></f_command>
+  <loop51><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>324</LINE></loop51>
+  <high2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>331</LINE></high2>
+  <write0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>418</LINE></write0>
+  <write1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>407</LINE></write1>
+  <ROM_COMMANDS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>339</LINE></ROM_COMMANDS>
+  <dallas_init><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>393</LINE></dallas_init>
+  <exit0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>357</LINE></exit0>
+  <loop41><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>346</LINE></loop41>
+  <high1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>353</LINE></high1>
+  <check1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>368</LINE></check1>
+  <bit_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>460</LINE></bit_read>
+  <byte_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>427</LINE></byte_read>
+  <binary_decimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>475</LINE></binary_decimal>
+  <delayus><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>386</LINE></delayus>
+  <loopread><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>430</LINE></loopread>
+  <one><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>450</LINE></one>
+  <negativeresult><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>486</LINE></negativeresult>
+  <maindigits><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>500</LINE></maindigits>
+  <ASCII_CONVERT><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>529</LINE></ASCII_CONVERT>
+  <xmit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\Attiny10thermometerTM1637display\Attiny10thermometerTM1637display\main.asm</FILE><LINE>561</LINE></xmit>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,97 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATtiny804"</DEVICE>
+ <WORKING_DIR>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc\tn804def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\Debug\DS18B20ATTINY804.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DS18B20ATTINY804.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DS18B20ATTINY804.map</FILE>
+  <FILE>DS18B20ATTINY804.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <PAD><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>73</LINE></PAD>
+  <PAD1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>74</LINE></PAD1>
+  <presence><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>75</LINE></presence>
+  <ROM1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>76</LINE></ROM1>
+  <ROM2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>77</LINE></ROM2>
+  <SCRATCHPAD><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>78</LINE></SCRATCHPAD>
+  <minussign><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>79</LINE></minussign>
+  <firstdigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>80</LINE></firstdigit>
+  <seconddigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>81</LINE></seconddigit>
+  <thirddigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>82</LINE></thirddigit>
+  <decimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>83</LINE></decimal>
+  <firstplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>84</LINE></firstplace>
+  <secplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>85</LINE></secplace>
+  <thirdplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>86</LINE></thirdplace>
+  <fourthplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>87</LINE></fourthplace>
+  <reset><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>90</LINE></reset>
+  <UART_SETUP><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>323</LINE></UART_SETUP>
+  <measure><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>106</LINE></measure>
+  <dallas_init><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>142</LINE></dallas_init>
+  <ROM_COMMANDS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>285</LINE></ROM_COMMANDS>
+  <f_command><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>306</LINE></f_command>
+  <ms750><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>276</LINE></ms750>
+  <check1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>111</LINE></check1>
+  <bit_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>194</LINE></bit_read>
+  <byte_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>169</LINE></byte_read>
+  <binary_decimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>415</LINE></binary_decimal>
+  <TXUSART><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>375</LINE></TXUSART>
+  <us><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>249</LINE></us>
+  <write1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>155</LINE></write1>
+  <write0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>162</LINE></write0>
+  <loop3><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>172</LINE></loop3>
+  <one><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>186</LINE></one>
+  <delayYx1mS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>209</LINE></delayYx1mS>
+  <delay1mS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>224</LINE></delay1mS>
+  <delay1mS_01><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>230</LINE></delay1mS_01>
+  <us1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>242</LINE></us1>
+  <ms1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>261</LINE></ms1>
+  <ms10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>264</LINE></ms10>
+  <ms50><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>267</LINE></ms50>
+  <ms100><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>270</LINE></ms100>
+  <ms500><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>273</LINE></ms500>
+  <ms1000><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>279</LINE></ms1000>
+  <exit0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>303</LINE></exit0>
+  <loop4><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>292</LINE></loop4>
+  <high1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>299</LINE></high1>
+  <loop5><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>309</LINE></loop5>
+  <high2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>316</LINE></high2>
+  <sendbyte><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>339</LINE></sendbyte>
+  <send_temp><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>349</LINE></send_temp>
+  <loop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>353</LINE></loop>
+  <exit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>360</LINE></exit>
+  <TXstring><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>363</LINE></TXstring>
+  <string><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>383</LINE></string>
+  <loop2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>366</LINE></loop2>
+  <exit2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>372</LINE></exit2>
+  <string2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>384</LINE></string2>
+  <mul16x16_16><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>403</LINE></mul16x16_16>
+  <negativeresult><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>436</LINE></negativeresult>
+  <bin2ascii><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>492</LINE></bin2ascii>
+  <maindigits><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>461</LINE></maindigits>
+  <zero_suppress><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>536</LINE></zero_suppress>
+  <loop10k><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>494</LINE></loop10k>
+  <end10k><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>500</LINE></end10k>
+  <loop1k><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>503</LINE></loop1k>
+  <end1k><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>509</LINE></end1k>
+  <loop100><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>512</LINE></loop100>
+  <end100><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>518</LINE></end100>
+  <loop10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>523</LINE></loop10>
+  <end10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>527</LINE></end10>
+  <blank><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>544</LINE></blank>
+  <exit1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\DS18B20ATTINY804\DS18B20ATTINY804\main.asm</FILE><LINE>559</LINE></exit1>
+ </LABELS>
+</ASSEMBLER_INFO>

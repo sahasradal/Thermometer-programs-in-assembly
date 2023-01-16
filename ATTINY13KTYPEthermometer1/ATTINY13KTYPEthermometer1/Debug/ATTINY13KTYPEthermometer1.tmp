@@ -1,0 +1,105 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATtiny13A"</DEVICE>
+ <WORKING_DIR>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc\tn13adef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\Debug\ATTINY13KTYPEthermometer1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ATTINY13KTYPEthermometer1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ATTINY13KTYPEthermometer1.map</FILE>
+  <FILE>ATTINY13KTYPEthermometer1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <PAD><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>53</LINE></PAD>
+  <PAD1><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>54</LINE></PAD1>
+  <PAD2><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>55</LINE></PAD2>
+  <PAD3><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>56</LINE></PAD3>
+  <OLdigit><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>57</LINE></OLdigit>
+  <TTdigit><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>58</LINE></TTdigit>
+  <Tdigit><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>59</LINE></Tdigit>
+  <Hdigit><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>60</LINE></Hdigit>
+  <point><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>61</LINE></point>
+  <tendigit><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>62</LINE></tendigit>
+  <ONE><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>63</LINE></ONE>
+  <gap><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>64</LINE></gap>
+  <CEE><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>65</LINE></CEE>
+  <i2c_command_write><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>255</LINE></i2c_command_write>
+  <OLED_INIT><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>235</LINE></OLED_INIT>
+  <array_read><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>277</LINE></array_read>
+  <i2c_stop><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>151</LINE></i2c_stop>
+  <clear_OLED><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>418</LINE></clear_OLED>
+  <read><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>88</LINE></read>
+  <MAXREAD><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>485</LINE></MAXREAD>
+  <TEMP_CALC><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>512</LINE></TEMP_CALC>
+  <ascii_convert><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>528</LINE></ascii_convert>
+  <zero_suppress><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>463</LINE></zero_suppress>
+  <XYX><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>100</LINE></XYX>
+  <set_cursor><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>433</LINE></set_cursor>
+  <printloop><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>107</LINE></printloop>
+  <printchar><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>291</LINE></printchar>
+  <ms250><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>229</LINE></ms250>
+  <sda_low><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>119</LINE></sda_low>
+  <sda_high><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>123</LINE></sda_high>
+  <scl_low><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>127</LINE></scl_low>
+  <scl_high><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>131</LINE></scl_high>
+  <i2c_init><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>135</LINE></i2c_init>
+  <i2c_start><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>144</LINE></i2c_start>
+  <i2c_write><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>166</LINE></i2c_write>
+  <i2c_ack><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>157</LINE></i2c_ack>
+  <loop><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>168</LINE></loop>
+  <delayTx1mS><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>197</LINE></delayTx1mS>
+  <delay1mS><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>212</LINE></delay1mS>
+  <delay1mS_01><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>218</LINE></delay1mS_01>
+  <OLED_INIT_BYTES><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>239</LINE></OLED_INIT_BYTES>
+  <i2c_data_write><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>265</LINE></i2c_data_write>
+  <loop2><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>278</LINE></loop2>
+  <decimal1><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>299</LINE></decimal1>
+  <letterC><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>307</LINE></letterC>
+  <spacee><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>303</LINE></spacee>
+  <print><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>311</LINE></print>
+  <fontdecimal><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>406</LINE></fontdecimal>
+  <ASCII0><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>324</LINE></ASCII0>
+  <fontspace><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>408</LINE></fontspace>
+  <fontC><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>410</LINE></fontC>
+  <font0><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>386</LINE></font0>
+  <multiply><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>318</LINE></multiply>
+  <array_read2><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>335</LINE></array_read2>
+  <loop12><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>336</LINE></loop12>
+  <double><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>357</LINE></double>
+  <dloop><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>362</LINE></dloop>
+  <bit1><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>372</LINE></bit1>
+  <font1><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>388</LINE></font1>
+  <font2><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>390</LINE></font2>
+  <font3><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>392</LINE></font3>
+  <font4><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>394</LINE></font4>
+  <font5><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>396</LINE></font5>
+  <font6><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>398</LINE></font6>
+  <font7><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>400</LINE></font7>
+  <font8><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>402</LINE></font8>
+  <font9><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>404</LINE></font9>
+  <ccursor><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>458</LINE></ccursor>
+  <lll><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>423</LINE></lll>
+  <blank><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>468</LINE></blank>
+  <exit1><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>481</LINE></exit1>
+  <rloop><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>488</LINE></rloop>
+  <calcu><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>518</LINE></calcu>
+  <ascii_loop><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>536</LINE></ascii_loop>
+  <Dby100000><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>588</LINE></Dby100000>
+  <Dby10000><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>597</LINE></Dby10000>
+  <Dby1000><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>605</LINE></Dby1000>
+  <Dby100><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>613</LINE></Dby100>
+  <Dby10><FILE>c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm</FILE><LINE>621</LINE></Dby10>
+ </LABELS>
+</ASSEMBLER_INFO>

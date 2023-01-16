@@ -1,0 +1,98 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATtiny10"</DEVICE>
+ <WORKING_DIR>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc\tn10def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\Debug\attiny10temprerature.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>attiny10temprerature.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>attiny10temprerature.map</FILE>
+  <FILE>attiny10temprerature.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <PAD><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>78</LINE></PAD>
+  <PAD1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>79</LINE></PAD1>
+  <presence><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>80</LINE></presence>
+  <minussign><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>81</LINE></minussign>
+  <firstdigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>82</LINE></firstdigit>
+  <seconddigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>83</LINE></seconddigit>
+  <thirddigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>84</LINE></thirddigit>
+  <decimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>85</LINE></decimal>
+  <firstplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>86</LINE></firstplace>
+  <secplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>87</LINE></secplace>
+  <thirdplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>88</LINE></thirdplace>
+  <fourthplace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>89</LINE></fourthplace>
+  <SCRATCHPAD><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>90</LINE></SCRATCHPAD>
+  <reset><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>94</LINE></reset>
+  <i2c_command_write><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>216</LINE></i2c_command_write>
+  <OLED_INIT><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>134</LINE></OLED_INIT>
+  <array_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>237</LINE></array_read>
+  <i2c_stop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>184</LINE></i2c_stop>
+  <clear_OLED><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>358</LINE></clear_OLED>
+  <set_cursor><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>375</LINE></set_cursor>
+  <T><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>339</LINE></T>
+  <ASCII0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>265</LINE></ASCII0>
+  <E><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>317</LINE></E>
+  <M><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>328</LINE></M>
+  <P><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>332</LINE></P>
+  <C><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>314</LINE></C>
+  <main_loop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>120</LINE></main_loop>
+  <measure><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>536</LINE></measure>
+  <printtemp><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>126</LINE></printtemp>
+  <print><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>251</LINE></print>
+  <OLED_INIT_BYTES><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>138</LINE></OLED_INIT_BYTES>
+  <sda_low><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>151</LINE></sda_low>
+  <sda_high><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>156</LINE></sda_high>
+  <scl_low><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>161</LINE></scl_low>
+  <scl_high><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>166</LINE></scl_high>
+  <i2c_init><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>171</LINE></i2c_init>
+  <i2c_start><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>177</LINE></i2c_start>
+  <i2c_write><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>190</LINE></i2c_write>
+  <loop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>192</LINE></loop>
+  <i2c_data_write><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>226</LINE></i2c_data_write>
+  <loop1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>238</LINE></loop1>
+  <fonts><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>276</LINE></fonts>
+  <multiply><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>259</LINE></multiply>
+  <loop3><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>361</LINE></loop3>
+  <loop4><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>363</LINE></loop4>
+  <loop5><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>368</LINE></loop5>
+  <ascii_convert><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>425</LINE></ascii_convert>
+  <xmit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>457</LINE></xmit>
+  <calc_fraction><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>468</LINE></calc_fraction>
+  <getout><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>485</LINE></getout>
+  <clrnexit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>489</LINE></clrnexit>
+  <fmultiply><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>479</LINE></fmultiply>
+  <f_command><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>497</LINE></f_command>
+  <loop51><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>500</LINE></loop51>
+  <high2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>507</LINE></high2>
+  <write0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>586</LINE></write0>
+  <write1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>577</LINE></write1>
+  <ROM_COMMANDS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>513</LINE></ROM_COMMANDS>
+  <dallas_init><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>565</LINE></dallas_init>
+  <exit0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>531</LINE></exit0>
+  <loop41><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>520</LINE></loop41>
+  <high1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>527</LINE></high1>
+  <check1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>542</LINE></check1>
+  <bit_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>623</LINE></bit_read>
+  <byte_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>593</LINE></byte_read>
+  <binary_decimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>637</LINE></binary_decimal>
+  <delayus><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>558</LINE></delayus>
+  <us10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>630</LINE></us10>
+  <loopread><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>596</LINE></loopread>
+  <one><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>615</LINE></one>
+  <negativeresult><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>650</LINE></negativeresult>
+  <maindigits><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\attiny10temprerature\attiny10temprerature\main.asm</FILE><LINE>666</LINE></maindigits>
+ </LABELS>
+</ASSEMBLER_INFO>

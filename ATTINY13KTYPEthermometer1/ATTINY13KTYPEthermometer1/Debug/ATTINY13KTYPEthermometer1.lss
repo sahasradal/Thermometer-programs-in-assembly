@@ -1,0 +1,1273 @@
+
+AVRASM ver. 2.2.7  c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm Sun Jan 15 19:46:56 2023
+
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc\tn13adef.inc'
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc\tn13adef.inc'
+                                 
+                                 ;
+                                 
+                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATtiny13A.xml ***********
+                                 ;*************************************************************************
+                                 ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
+                                 ;* 
+                                 ;* Number            : AVR000
+                                 ;* File Name         : "tn13Adef.inc"
+                                 ;* Title             : Register/Bit Definitions for the ATtiny13A
+                                 ;* Date              : 2011-02-09
+                                 ;* Version           : 2.35
+                                 ;* Support E-mail    : avr@atmel.com
+                                 ;* Target MCU        : ATtiny13A
+                                 ;* 
+                                 ;* DESCRIPTION
+                                 ;* When including this file in the assembly program file, all I/O register 
+                                 ;* names and I/O register bit names appearing in the data book can be used.
+                                 ;* In addition, the six registers forming the three data pointers X, Y and 
+                                 ;* Z have been assigned names XL - ZH. Highest RAM address for Internal 
+                                 ;* SRAM is also defined 
+                                 ;* 
+                                 ;* The Register names are represented by their hexadecimal address.
+                                 ;* 
+                                 ;* The Register Bit names are represented by their bit number (0-7).
+                                 ;* 
+                                 ;* Please observe the difference in using the bit names with instructions
+                                 ;* such as "sbr"/"cbr" (set/clear bit in register) and "sbrs"/"sbrc"
+                                 ;* (skip if bit in register set/cleared). The following example illustrates
+                                 ;* this:
+                                 ;* 
+                                 ;* in    r16,PORTB             ;read PORTB latch
+                                 ;* sbr   r16,(1<<PB6)+(1<<PB5) ;set PB6 and PB5 (use masks, not bit#)
+                                 ;* out   PORTB,r16             ;output to PORTB
+                                 ;* 
+                                 ;* in    r16,TIFR              ;read the Timer Interrupt Flag Register
+                                 ;* sbrc  r16,TOV0              ;test the overflow flag (use bit#)
+                                 ;* rjmp  TOV0_is_set           ;jump if set
+                                 ;* ...                         ;otherwise do something else
+                                 ;*************************************************************************
+                                 
+                                 #ifndef _TN13ADEF_INC_
+                                 #define _TN13ADEF_INC_
+                                 
+                                 
+                                 #pragma partinc 0
+                                 
+                                 ; ***** SPECIFY DEVICE ***************************************************
+                                 .device ATtiny13A
+                                 #pragma AVRPART ADMIN PART_NAME ATtiny13A
+                                 .equ	SIGNATURE_000	= 0x1e
+                                 .equ	SIGNATURE_001	= 0x90
+                                 .equ	SIGNATURE_002	= 0x07
+                                 
+                                 #pragma AVRPART CORE CORE_VERSION V2
+                                 #pragma AVRPART CORE NEW_INSTRUCTIONS lpm rd,z+
+                                 
+                                 
+                                 ; ***** I/O REGISTER DEFINITIONS *****************************************
+                                 ; NOTE:
+                                 ; Definitions marked "MEMORY MAPPED"are extended I/O ports
+                                 ; and cannot be used with IN/OUT instructions
+                                 .equ	SREG	= 0x3f
+                                 .equ	SPL	= 0x3d
+                                 .equ	GIMSK	= 0x3b
+                                 .equ	GIFR	= 0x3a
+                                 .equ	TIMSK0	= 0x39
+                                 .equ	TIFR0	= 0x38
+                                 .equ	SPMCSR	= 0x37
+                                 .equ	OCR0A	= 0x36
+                                 .equ	MCUCR	= 0x35
+                                 .equ	MCUSR	= 0x34
+                                 .equ	TCCR0B	= 0x33
+                                 .equ	TCNT0	= 0x32
+                                 .equ	OSCCAL	= 0x31
+                                 .equ	BODCR	= 0x30
+                                 .equ	TCCR0A	= 0x2f
+                                 .equ	DWDR	= 0x2e
+                                 .equ	OCR0B	= 0x29
+                                 .equ	GTCCR	= 0x28
+                                 .equ	CLKPR	= 0x26
+                                 .equ	PRR	= 0x25
+                                 .equ	WDTCR	= 0x21
+                                 .equ	EEAR	= 0x1e
+                                 .equ	EEDR	= 0x1d
+                                 .equ	EECR	= 0x1c
+                                 .equ	PORTB	= 0x18
+                                 .equ	DDRB	= 0x17
+                                 .equ	PINB	= 0x16
+                                 .equ	PCMSK	= 0x15
+                                 .equ	DIDR0	= 0x14
+                                 .equ	ACSR	= 0x08
+                                 .equ	ADMUX	= 0x07
+                                 .equ	ADCSRA	= 0x06
+                                 .equ	ADCH	= 0x05
+                                 .equ	ADCL	= 0x04
+                                 .equ	ADCSRB	= 0x03
+                                 
+                                 
+                                 ; ***** BIT DEFINITIONS **************************************************
+                                 
+                                 ; ***** AD_CONVERTER *****************
+                                 ; ADMUX - The ADC multiplexer Selection Register
+                                 .equ	MUX0	= 0	; Analog Channel and Gain Selection Bits
+                                 .equ	MUX1	= 1	; Analog Channel and Gain Selection Bits
+                                 .equ	ADLAR	= 5	; Left Adjust Result
+                                 .equ	REFS0	= 6	; Reference Selection Bit 0
+                                 
+                                 ; ADCSRA - The ADC Control and Status register
+                                 .equ	ADPS0	= 0	; ADC  Prescaler Select Bits
+                                 .equ	ADPS1	= 1	; ADC  Prescaler Select Bits
+                                 .equ	ADPS2	= 2	; ADC  Prescaler Select Bits
+                                 .equ	ADIE	= 3	; ADC Interrupt Enable
+                                 .equ	ADIF	= 4	; ADC Interrupt Flag
+                                 .equ	ADATE	= 5	; ADC Auto Trigger Enable
+                                 .equ	ADSC	= 6	; ADC Start Conversion
+                                 .equ	ADEN	= 7	; ADC Enable
+                                 
+                                 ; ADCH - ADC Data Register High Byte
+                                 .equ	ADCH0	= 0	; ADC Data Register High Byte Bit 0
+                                 .equ	ADCH1	= 1	; ADC Data Register High Byte Bit 1
+                                 .equ	ADCH2	= 2	; ADC Data Register High Byte Bit 2
+                                 .equ	ADCH3	= 3	; ADC Data Register High Byte Bit 3
+                                 .equ	ADCH4	= 4	; ADC Data Register High Byte Bit 4
+                                 .equ	ADCH5	= 5	; ADC Data Register High Byte Bit 5
+                                 .equ	ADCH6	= 6	; ADC Data Register High Byte Bit 6
+                                 .equ	ADCH7	= 7	; ADC Data Register High Byte Bit 7
+                                 
+                                 ; ADCL - ADC Data Register Low Byte
+                                 .equ	ADCL0	= 0	; ADC Data Register Low Byte Bit 0
+                                 .equ	ADCL1	= 1	; ADC Data Register Low Byte Bit 1
+                                 .equ	ADCL2	= 2	; ADC Data Register Low Byte Bit 2
+                                 .equ	ADCL3	= 3	; ADC Data Register Low Byte Bit 3
+                                 .equ	ADCL4	= 4	; ADC Data Register Low Byte Bit 4
+                                 .equ	ADCL5	= 5	; ADC Data Register Low Byte Bit 5
+                                 .equ	ADCL6	= 6	; ADC Data Register Low Byte Bit 6
+                                 .equ	ADCL7	= 7	; ADC Data Register Low Byte Bit 7
+                                 
+                                 ; ADCSRB - ADC Control and Status Register B
+                                 .equ	ADTS0	= 0	; ADC Auto Trigger Source 0
+                                 .equ	ADTS1	= 1	; ADC Auto Trigger Source 1
+                                 .equ	ADTS2	= 2	; ADC Auto Trigger Source 2
+                                 
+                                 ; DIDR0 - Digital Input Disable Register 0
+                                 .equ	ADC1D	= 2	; ADC2 Digital input Disable
+                                 .equ	ADC3D	= 3	; ADC3 Digital input Disable
+                                 .equ	ADC2D	= 4	; ADC2 Digital input Disable
+                                 .equ	ADC0D	= 5	; ADC0 Digital input Disable
+                                 
+                                 
+                                 ; ***** ANALOG_COMPARATOR ************
+                                 ; ADCSRB - ADC Control and Status Register B
+                                 .equ	ACME	= 6	; Analog Comparator Multiplexer Enable
+                                 
+                                 ; ACSR - Analog Comparator Control And Status Register
+                                 .equ	ACIS0	= 0	; Analog Comparator Interrupt Mode Select bit 0
+                                 .equ	ACIS1	= 1	; Analog Comparator Interrupt Mode Select bit 1
+                                 .equ	ACIE	= 3	; Analog Comparator Interrupt Enable
+                                 .equ	ACI	= 4	; Analog Comparator Interrupt Flag
+                                 .equ	ACO	= 5	; Analog Compare Output
+                                 .equ	ACBG	= 6	; Analog Comparator Bandgap Select
+                                 .equ	AINBG	= ACBG	; For compatibility
+                                 .equ	ACD	= 7	; Analog Comparator Disable
+                                 
+                                 ; DIDR0 - 
+                                 .equ	AIN0D	= 0	; AIN0 Digital Input Disable
+                                 .equ	AIN1D	= 1	; AIN1 Digital Input Disable
+                                 
+                                 
+                                 ; ***** EEPROM ***********************
+                                 ; EEAR - EEPROM Read/Write Access
+                                 .equ	EEARL	= EEAR	; For compatibility
+                                 .equ	EEAR0	= 0	; EEPROM Read/Write Access bit 0
+                                 .equ	EEAR1	= 1	; EEPROM Read/Write Access bit 1
+                                 .equ	EEAR2	= 2	; EEPROM Read/Write Access bit 2
+                                 .equ	EEAR3	= 3	; EEPROM Read/Write Access bit 3
+                                 .equ	EEAR4	= 4	; EEPROM Read/Write Access bit 4
+                                 .equ	EEAR5	= 5	; EEPROM Read/Write Access bit 5
+                                 
+                                 ; EEDR - EEPROM Data Register
+                                 .equ	EEDR0	= 0	; EEPROM Data Register bit 0
+                                 .equ	EEDR1	= 1	; EEPROM Data Register bit 1
+                                 .equ	EEDR2	= 2	; EEPROM Data Register bit 2
+                                 .equ	EEDR3	= 3	; EEPROM Data Register bit 3
+                                 .equ	EEDR4	= 4	; EEPROM Data Register bit 4
+                                 .equ	EEDR5	= 5	; EEPROM Data Register bit 5
+                                 .equ	EEDR6	= 6	; EEPROM Data Register bit 6
+                                 .equ	EEDR7	= 7	; EEPROM Data Register bit 7
+                                 
+                                 ; EECR - EEPROM Control Register
+                                 .equ	EERE	= 0	; EEPROM Read Enable
+                                 .equ	EEWE	= 1	; EEPROM Write Enable
+                                 .equ	EEPE	= EEWE	; For compatibility
+                                 .equ	EEMWE	= 2	; EEPROM Master Write Enable
+                                 .equ	EEMPE	= EEMWE	; For compatibility
+                                 .equ	EERIE	= 3	; EEProm Ready Interrupt Enable
+                                 .equ	EEPM0	= 4	; 
+                                 .equ	EEPM1	= 5	; 
+                                 
+                                 
+                                 ; ***** PORTB ************************
+                                 ; PORTB - Data Register, Port B
+                                 .equ	PORTB0	= 0	; 
+                                 .equ	PB0	= 0	; For compatibility
+                                 .equ	PORTB1	= 1	; 
+                                 .equ	PB1	= 1	; For compatibility
+                                 .equ	PORTB2	= 2	; 
+                                 .equ	PB2	= 2	; For compatibility
+                                 .equ	PORTB3	= 3	; 
+                                 .equ	PB3	= 3	; For compatibility
+                                 .equ	PORTB4	= 4	; 
+                                 .equ	PB4	= 4	; For compatibility
+                                 .equ	PORTB5	= 5	; 
+                                 .equ	PB5	= 5	; For compatibility
+                                 
+                                 ; DDRB - Data Direction Register, Port B
+                                 .equ	DDB0	= 0	; 
+                                 .equ	DDB1	= 1	; 
+                                 .equ	DDB2	= 2	; 
+                                 .equ	DDB3	= 3	; 
+                                 .equ	DDB4	= 4	; 
+                                 .equ	DDB5	= 5	; 
+                                 
+                                 ; PINB - Input Pins, Port B
+                                 .equ	PINB0	= 0	; 
+                                 .equ	PINB1	= 1	; 
+                                 .equ	PINB2	= 2	; 
+                                 .equ	PINB3	= 3	; 
+                                 .equ	PINB4	= 4	; 
+                                 .equ	PINB5	= 5	; 
+                                 
+                                 
+                                 ; ***** EXTERNAL_INTERRUPT ***********
+                                 ; MCUCR - MCU Control Register
+                                 .equ	ISC00	= 0	; Interrupt Sense Control 0 Bit 0
+                                 .equ	ISC01	= 1	; Interrupt Sense Control 0 Bit 1
+                                 
+                                 ; GIMSK - General Interrupt Mask Register
+                                 .equ	GICR	= GIMSK	; For compatibility
+                                 .equ	PCIE	= 5	; Pin Change Interrupt Enable
+                                 .equ	INT0	= 6	; External Interrupt Request 0 Enable
+                                 
+                                 ; GIFR - General Interrupt Flag register
+                                 .equ	PCIF	= 5	; Pin Change Interrupt Flag
+                                 .equ	INTF0	= 6	; External Interrupt Flag 0
+                                 
+                                 ; PCMSK - Pin Change Enable Mask
+                                 .equ	PCINT0	= 0	; Pin Change Enable Mask Bit 0
+                                 .equ	PCINT1	= 1	; Pin Change Enable Mask Bit 1
+                                 .equ	PCINT2	= 2	; Pin Change Enable Mask Bit 2
+                                 .equ	PCINT3	= 3	; Pin Change Enable Mask Bit 3
+                                 .equ	PCINT4	= 4	; Pin Change Enable Mask Bit 4
+                                 .equ	PCINT5	= 5	; Pin Change Enable Mask Bit 5
+                                 
+                                 
+                                 ; ***** TIMER_COUNTER_0 **************
+                                 ; TIMSK0 - Timer/Counter0 Interrupt Mask Register
+                                 .equ	TOIE0	= 1	; Timer/Counter0 Overflow Interrupt Enable
+                                 .equ	OCIE0A	= 2	; Timer/Counter0 Output Compare Match A Interrupt Enable
+                                 .equ	OCIE0B	= 3	; Timer/Counter0 Output Compare Match B Interrupt Enable
+                                 
+                                 ; TIFR0 - Timer/Counter0 Interrupt Flag register
+                                 .equ	TOV0	= 1	; Timer/Counter0 Overflow Flag
+                                 .equ	OCF0A	= 2	; Timer/Counter0 Output Compare Flag 0A
+                                 .equ	OCF0B	= 3	; Timer/Counter0 Output Compare Flag 0B
+                                 
+                                 ; OCR0A - Timer/Counter0 Output Compare Register
+                                 .equ	OCR0A_0	= 0	; 
+                                 .equ	OCR0A_1	= 1	; 
+                                 .equ	OCR0A_2	= 2	; 
+                                 .equ	OCR0A_3	= 3	; 
+                                 .equ	OCR0A_4	= 4	; 
+                                 .equ	OCR0A_5	= 5	; 
+                                 .equ	OCR0A_6	= 6	; 
+                                 .equ	OCR0A_7	= 7	; 
+                                 
+                                 ; TCCR0A - Timer/Counter  Control Register A
+                                 .equ	WGM00	= 0	; Waveform Generation Mode
+                                 .equ	WGM01	= 1	; Waveform Generation Mode
+                                 .equ	COM0B0	= 4	; Compare Match Output B Mode
+                                 .equ	COM0B1	= 5	; Compare Match Output B Mode
+                                 .equ	COM0A0	= 6	; Compare Match Output A Mode
+                                 .equ	COM0A1	= 7	; Compare Match Output A Mode
+                                 
+                                 ; TCNT0 - Timer/Counter0
+                                 .equ	TCNT0_0	= 0	; 
+                                 .equ	TCNT0_1	= 1	; 
+                                 .equ	TCNT0_2	= 2	; 
+                                 .equ	TCNT0_3	= 3	; 
+                                 .equ	TCNT0_4	= 4	; 
+                                 .equ	TCNT0_5	= 5	; 
+                                 .equ	TCNT0_6	= 6	; 
+                                 .equ	TCNT0_7	= 7	; 
+                                 
+                                 ; TCCR0B - Timer/Counter Control Register B
+                                 .equ	CS00	= 0	; Clock Select
+                                 .equ	CS01	= 1	; Clock Select
+                                 .equ	CS02	= 2	; Clock Select
+                                 .equ	WGM02	= 3	; Waveform Generation Mode
+                                 .equ	FOC0B	= 6	; Force Output Compare B
+                                 .equ	FOC0A	= 7	; Force Output Compare A
+                                 
+                                 ; OCR0B - Timer/Counter0 Output Compare Register
+                                 .equ	OCR0B_0	= 0	; 
+                                 .equ	OCR0B_1	= 1	; 
+                                 .equ	OCR0B_2	= 2	; 
+                                 .equ	OCR0B_3	= 3	; 
+                                 .equ	OCR0B_4	= 4	; 
+                                 .equ	OCR0B_5	= 5	; 
+                                 .equ	OCR0B_6	= 6	; 
+                                 .equ	OCR0B_7	= 7	; 
+                                 
+                                 ; GTCCR - General Timer Conuter Register
+                                 .equ	PSR10	= 0	; Prescaler Reset Timer/Counter0
+                                 .equ	TSM	= 7	; Timer/Counter Synchronization Mode
+                                 
+                                 
+                                 ; ***** WATCHDOG *********************
+                                 ; WDTCR - Watchdog Timer Control Register
+                                 .equ	WDP0	= 0	; Watch Dog Timer Prescaler bit 0
+                                 .equ	WDP1	= 1	; Watch Dog Timer Prescaler bit 1
+                                 .equ	WDP2	= 2	; Watch Dog Timer Prescaler bit 2
+                                 .equ	WDE	= 3	; Watch Dog Enable
+                                 .equ	WDCE	= 4	; Watchdog Change Enable
+                                 .equ	WDP3	= 5	; Watchdog Timer Prescaler Bit 3
+                                 .equ	WDTIE	= 6	; Watchdog Timeout Interrupt Enable
+                                 .equ	WDTIF	= 7	; Watchdog Timeout Interrupt Flag
+                                 
+                                 
+                                 ; ***** CPU **************************
+                                 ; SREG - Status Register
+                                 .equ	SREG_C	= 0	; Carry Flag
+                                 .equ	SREG_Z	= 1	; Zero Flag
+                                 .equ	SREG_N	= 2	; Negative Flag
+                                 .equ	SREG_V	= 3	; Two's Complement Overflow Flag
+                                 .equ	SREG_S	= 4	; Sign Bit
+                                 .equ	SREG_H	= 5	; Half Carry Flag
+                                 .equ	SREG_T	= 6	; Bit Copy Storage
+                                 .equ	SREG_I	= 7	; Global Interrupt Enable
+                                 
+                                 ; SPL - Stack Pointer Low Byte
+                                 .equ	SP0	= 0	; Stack Pointer Bit 0
+                                 .equ	SP1	= 1	; Stack Pointer Bit 1
+                                 .equ	SP2	= 2	; Stack Pointer Bit 2
+                                 .equ	SP3	= 3	; Stack Pointer Bit 3
+                                 .equ	SP4	= 4	; Stack Pointer Bit 4
+                                 .equ	SP5	= 5	; Stack Pointer Bit 5
+                                 .equ	SP6	= 6	; Stack Pointer Bit 6
+                                 .equ	SP7	= 7	; Stack Pointer Bit 7
+                                 
+                                 ; MCUCR - MCU Control Register
+                                 ;.equ	ISC00	= 0	; Interrupt Sense Control 0 bit 0
+                                 ;.equ	ISC01	= 1	; Interrupt Sense Control 0 bit 1
+                                 .equ	SM0	= 3	; Sleep Mode Select Bit 0
+                                 .equ	SM1	= 4	; Sleep Mode Select Bit 1
+                                 .equ	SE	= 5	; Sleep Enable
+                                 .equ	PUD	= 6	; Pull-up Disable
+                                 
+                                 ; MCUSR - MCU Status register
+                                 .equ	PORF	= 0	; Power-On Reset Flag
+                                 .equ	EXTRF	= 1	; External Reset Flag
+                                 .equ	BORF	= 2	; Brown-out Reset Flag
+                                 .equ	WDRF	= 3	; Watchdog Reset Flag
+                                 
+                                 ; OSCCAL - Oscillator Calibration Register
+                                 .equ	CAL0	= 0	; Oscillatro Calibration Value Bit 0
+                                 .equ	CAL1	= 1	; Oscillatro Calibration Value Bit 1
+                                 .equ	CAL2	= 2	; Oscillatro Calibration Value Bit 2
+                                 .equ	CAL3	= 3	; Oscillatro Calibration Value Bit 3
+                                 .equ	CAL4	= 4	; Oscillatro Calibration Value Bit 4
+                                 .equ	CAL5	= 5	; Oscillatro Calibration Value Bit 5
+                                 .equ	CAL6	= 6	; Oscillatro Calibration Value Bit 6
+                                 
+                                 ; CLKPR - Clock Prescale Register
+                                 .equ	CLKPS0	= 0	; Clock Prescaler Select Bit 0
+                                 .equ	CLKPS1	= 1	; Clock Prescaler Select Bit 1
+                                 .equ	CLKPS2	= 2	; Clock Prescaler Select Bit 2
+                                 .equ	CLKPS3	= 3	; Clock Prescaler Select Bit 3
+                                 .equ	CLKPCE	= 7	; Clock Prescaler Change Enable
+                                 
+                                 ; DWDR - Debug Wire Data Register
+                                 .equ	DWDR0	= 0	; Debug Wire Data Register Bit 0
+                                 .equ	DWDR1	= 1	; Debug Wire Data Register Bit 1
+                                 .equ	DWDR2	= 2	; Debug Wire Data Register Bit 2
+                                 .equ	DWDR3	= 3	; Debug Wire Data Register Bit 3
+                                 .equ	DWDR4	= 4	; Debug Wire Data Register Bit 4
+                                 .equ	DWDR5	= 5	; Debug Wire Data Register Bit 5
+                                 .equ	DWDR6	= 6	; Debug Wire Data Register Bit 6
+                                 .equ	DWDR7	= 7	; Debug Wire Data Register Bit 7
+                                 
+                                 ; SPMCSR - Store Program Memory Control and Status Register
+                                 .equ	SPMEN	= 0	; Store program Memory Enable
+                                 .equ	PGERS	= 1	; Page Erase
+                                 .equ	PGWRT	= 2	; Page Write
+                                 .equ	RFLB	= 3	; Read Fuse and Lock Bits
+                                 .equ	CTPB	= 4	; Clear Temporary Page Buffer
+                                 
+                                 ; PRR - Power Reduction Register
+                                 .equ	PRADC	= 0	; Power Reduction ADC
+                                 .equ	PRTIM0	= 1	; Power Reduction Timer/Counter0
+                                 
+                                 ; BODCR - BOD Control Register
+                                 .equ	BPDSE	= 0	; BOD Power-Down Sleep Enable
+                                 .equ	BPDS	= 1	; BOD Power-Down in Power-Down Sleep
+                                 
+                                 
+                                 
+                                 ; ***** LOCKSBITS ********************************************************
+                                 .equ	LB1	= 0	; Lockbit
+                                 .equ	LB2	= 1	; Lockbit
+                                 
+                                 
+                                 ; ***** FUSES ************************************************************
+                                 ; LOW fuse bits
+                                 .equ	CKSEL0	= 0	; Select Clock Source
+                                 .equ	CKSEL1	= 1	; Select Clock Source
+                                 .equ	SUT0	= 2	; Select start-up time
+                                 .equ	SUT1	= 3	; Select start-up time
+                                 .equ	CKDIV8	= 4	; Start up with system clock divided by 8
+                                 .equ	WDTON	= 5	; Watch dog timer always on
+                                 .equ	EESAVE	= 6	; Keep EEprom contents during chip erase
+                                 .equ	SPIEN	= 7	; SPI programming enable
+                                 
+                                 ; HIGH fuse bits
+                                 .equ	RSTDISBL	= 0	; Disable external reset
+                                 .equ	BODLEVEL0	= 1	; Enable BOD and select level
+                                 .equ	BODLEVEL1	= 2	; Enable BOD and select level
+                                 .equ	DWEN	= 3	; DebugWire Enable
+                                 .equ	SELFPRGEN	= 4	; Self Programming Enable
+                                 
+                                 
+                                 
+                                 ; ***** CPU REGISTER DEFINITIONS *****************************************
+                                 .def	XH	= r27
+                                 .def	XL	= r26
+                                 .def	YH	= r29
+                                 .def	YL	= r28
+                                 .def	ZH	= r31
+                                 .def	ZL	= r30
+                                 
+                                 
+                                 
+                                 ; ***** DATA MEMORY DECLARATIONS *****************************************
+                                 .equ	FLASHEND	= 0x01ff	; Note: Word address
+                                 .equ	IOEND	= 0x003f
+                                 .equ	SRAM_START	= 0x0060
+                                 .equ	SRAM_SIZE	= 64
+                                 .equ	RAMEND	= 0x009f
+                                 .equ	XRAMEND	= 0x0000
+                                 .equ	E2END	= 0x003f
+                                 .equ	EEPROMEND	= 0x003f
+                                 .equ	EEADRBITS	= 6
+                                 #pragma AVRPART MEMORY PROG_FLASH 1024
+                                 #pragma AVRPART MEMORY EEPROM 64
+                                 #pragma AVRPART MEMORY INT_SRAM SIZE 64
+                                 #pragma AVRPART MEMORY INT_SRAM START_ADDR 0x60
+                                 
+                                 
+                                 
+                                 ; ***** BOOTLOADER DECLARATIONS ******************************************
+                                 .equ	PAGESIZE	= 16
+                                 
+                                 
+                                 
+                                 ; ***** INTERRUPT VECTORS ************************************************
+                                 .equ	INT0addr	= 0x0001	; External Interrupt 0
+                                 .equ	PCI0addr	= 0x0002	; External Interrupt Request 0
+                                 .equ	OVF0addr	= 0x0003	; Timer/Counter0 Overflow
+                                 .equ	ERDYaddr	= 0x0004	; EEPROM Ready
+                                 .equ	ACIaddr	= 0x0005	; Analog Comparator
+                                 .equ	OC0Aaddr	= 0x0006	; Timer/Counter Compare Match A
+                                 .equ	OC0Baddr	= 0x0007	; Timer/Counter Compare Match B
+                                 .equ	WDTaddr	= 0x0008	; Watchdog Time-out
+                                 .equ	ADCCaddr	= 0x0009	; ADC Conversion Complete
+                                 
+                                 .equ	INT_VECTORS_SIZE	= 10	; size in words
+                                 
+                                 #endif  /* _TN13ADEF_INC_ */
+                                 
+                                 ; ***** END OF FILE ******************************************************
+                                 
+                                 ; ATTINY13KTYPEthermometer1.asm
+                                 ;
+                                 ; Created: 15/01/2023 18:49:14
+                                 ; Author : Manama
+                                 ;
+                                 
+                                 
+                                 .equ fclk = 1000000
+                                 .equ OLEDaddress = 0x78
+                                 .equ command = 0x00
+                                 .equ data_cmd = 0x40
+                                 .equ OLED_INIT_LEN = 15    
+                                 .equ font_length = 16
+                                 .def temp = r16
+                                 .def data = r17
+                                 .def address = r25  
+                                 .def counter = r18
+                                 .def array_length = r19
+                                 .def array_byte = r20
+                                 .def ASCII = r21
+                                 .def temp1 = r22
+                                 .def posx = r23
+                                 .def posy = r24
+                                 
+                                 
+                                 
+                                 .macro millis
+                                 ldi temp,@0
+                                 rcall delayTx1mS
+                                 .endm
+                                 
+                                 .macro pointer
+                                 ldi ZL,low(2*@0)		;load low value of OLED_INIT_BYTES address to ZL
+                                 ldi ZH,high(2*@0)		;load high value of OLED_INIT_BYTES address to ZH
+                                 .endm
+                                 
+                                 .macro printf
+                                 ldi temp,@0
+                                 mov ASCII,temp
+                                 rcall print
+                                 .endm 
+                                 
+                                 .macro cursor
+                                 ldi posy,@0
+                                 ldi posx,@1
+                                 rcall set_cursor
+                                 .endm 
+                                 
+                                 
+                                 
+                                 .dseg
+000060                            PAD:  .byte 1	
+000061                            PAD1: .byte 1	
+000062                            PAD2: .byte 1
+000063                            PAD3: .byte 1
+000064                            OLdigit: .byte 1
+000065                            TTdigit: .byte 1
+000066                            Tdigit: .byte 1
+000067                            Hdigit: .byte 1
+000068                            point: .byte 1
+000069                            tendigit: .byte 1
+00006a                            ONE: .byte 1
+00006b                            gap: .byte 1
+00006c                            CEE: .byte 1
+                                 
+                                 
+                                 
+                                 
+                                 .cseg
+000000 e20e                      	ldi r16,'.'					; load decimal point
+000001 9300 0068                 	sts point,r16				; store in sram point
+000003 e403                      	ldi r16,'C'					; load font "C"in r16
+000004 9300 006c                 	sts CEE,r16					; store in SRAM for later printing on OLED
+000006 e200                      	ldi r16,0x20				; load 0x20 or space in r16
+000007 9300 006b                 	sts gap,r16					; store in SRAM for printing on OLED
+000009 e108                      	ldi r16,0b00011000
+00000a bb07                      	out ddrb,r16				; store is ddr register 
+00000b 9ac3                      	sbi PORTB,PORTB3			; SS HI ,set BIT3,
+00000c e798                      	ldi address,OLEDaddress		; load in address register OLED display I2C adress
+00000d d06a                      	rcall i2c_command_write		; call 12c write subriutine
+00000e d05e                      	rcall OLED_INIT				; call OLED initialization routine
+00000f e03f                      	ldi array_length,OLED_INIT_LEN		;length of OLED init array 12 loaded
+000010 d071                      	rcall array_read			; call array_read subroutine to send OLED init to display via 12c
+000011 d02f                      	rcall i2c_stop				; call 12c stop
+000012 d11b                      	rcall clear_OLED			; call OLED screen clear routine. writes 0x00 in all OLED GDRAM address 128*32
+000013 d02d                      	rcall i2c_stop				; stop I2C transmission
+                                 read:
+000014 d14d                      	rcall MAXREAD			; call routine to read MAX6675 , result in r20:r19
+000015 9546                      	lsr r20					; logical shift right high register r20 msb
+000016 9537                      	ror r19					; rotate right through carry low register r19
+000017 9546                      	lsr r20					; temp value is held in d14-d3 bits
+000018 9537                      	ror r19					; we shift the r20:r19 to right 3 times 
+000019 9546                      	lsr r20					; the final 12 bit value from lsb will be temprature data
+00001a 9537                      	ror r19					; the data is shifted 3 times right in both r20:19,D14–D3  becomes D11-D0
+00001b d157                      	rcall TEMP_CALC			; converted temprature result in r9:r8:r7
+00001c d161                      	rcall ascii_convert		; temprature values in ASCII format stored in SRAM OLdigit to ONE , 7 spots
+00001d d12d                      	rcall zero_suppress		; call routine that supress all leading zeros in the OLED display
+                                 
+                                 XYX:
+00001e e798                      	ldi address,OLEDaddress		; load in address register OLED display I2C adress
+00001f e080
+000020 e070
+000021 d116                      	cursor 0,0				; set OLED cursor to coordinates 0,0
+000022 e009                      	ldi r16,9				; load r16 , 9
+000023 2ea0                      	mov r10,r16				; move 9 to r10. this serves as counter for SRAM location 
+000024 e6c4                      	ldi YL,low(OLdigit)		; load address of first digit OLdigit in SRAM
+000025 e0d0                      	ldi YH,high(OLdigit)
+                                 printloop:
+000026 9159                      	ld ASCII,Y+				; load ASCII with data in address pointed by Y register
+000027 d060                      	rcall printchar			; call sub routine printchar which prints ascii chars stored in SRAM 
+000028 94aa                      	dec r10					; decrease SRAM location counter
+000029 f7e1                      	brne printloop			; loop till counter r10 is 0
+00002a d03f                      	rcall ms250				; 250ms delay
+00002b d03e                      	rcall ms250				; 250ms delay
+00002c cfe7                      	rjmp read				; jump to label read to repeat
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;I2C ROUTINES     register used- temp/data/counter = r16/r17/r18                   ;
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 sda_low:
+00002d 9ab8                      	sbi ddrb,ddb0			;set ddrb0 making pb0 output, as port is 0 the output will sink causing the SDA line to go low
+00002e 9508                      	ret						; return
+                                 
+                                 sda_high:
+00002f 98b8                      	cbi ddrb,ddb0			;clear data direction bit of pb0.As port and DDR is 0 the pb0 is tristated and line is pulled high by I2C resistor
+000030 9508                      	ret
+                                 
+                                 scl_low:
+000031 9aba                      	sbi ddrb,ddb2			;set ddrb2 making pb2 output, as port is 0 the output will sink causing the SCK line to go low
+000032 9508                      	ret
+                                 
+                                 scl_high:
+000033 98ba                      	cbi ddrb,ddb2			;clear data direction bit of pb2.As port and DDR is 0 the pb2 is tristated and line is pulled high by I2C resistor
+000034 9508                      	ret
+                                 
+                                 i2c_init:
+000035 b307                      	in temp,ddrb
+000036 7f0a                      	andi temp,0xFA
+000037 bb07                      	out ddrb,temp	
+000038 b308                      	in temp,portb
+000039 7f0a                      	andi temp,0xFA		
+00003a bb08                      	out portb,temp
+00003b 9508                      	ret
+                                 
+                                 i2c_start:
+00003c dff0                      	rcall sda_low			;I2C start condition needs SDA low before SCL goes low
+00003d dff3                      	rcall scl_low
+00003e 2f19                      	mov data,address	;slave address is copied to data register to initiate communication.integrated with subroutine to reduce code repetition.
+00003f d00b                      	rcall i2c_write			;write function for i2c
+000040 9508                      	ret
+                                 
+                                 i2c_stop:
+000041 dfeb                      	rcall sda_low			;I2C needs SCL to go high and then SDA to high to indicate stop transmission.SDA is pulled low to make sure.
+000042 dff0                      	rcall scl_high
+000043 dfeb                      	rcall sda_high
+000044 9508                      	ret
+                                 
+                                 i2c_ack:
+000045 9ab8                      	sbi ddrb,ddb0			; sda low for ack
+000046 98ba                      	cbi ddrb,ddb2           ; scl high
+000047 0000                      	nop						; delay
+000048 9aba                      	sbi ddrb,ddb2			; scl low
+000049 98b8                      	cbi ddrb,ddb0			; sda high 
+00004a 9508                      	ret
+                                 
+                                 
+                                 i2c_write:
+00004b e028                      	ldi counter,0x08		;counter is loaded 8 as we send 8 bits.counter is decreased after sending each bit and completes transmission at 0
+                                 loop:
+00004c dfe0                      	rcall sda_low			;SDA is kept low and only made high if the read bit is 1
+00004d 2f01                      	mov temp,data			;copy data byte to temp
+00004e 7800                      	andi temp,0x80			;AND copied value with 0b10000000.If 7th bit is one the register holds the same value or register becomes 0
+00004f fd07                      	sbrc temp,7				;If 7th bit is 0 skip next instruction
+000050 dfde                      	rcall sda_high			;call SDA high function if AND result was a 1 in 7th bit in TEMP register
+000051 0000                      	nop						;delay
+000052 dfe0                      	rcall scl_high			;call SCL high to clock the data.data is transmitted when the clock is cycled high to low while SDA is held stable at 0 or 1
+000053 0f11                      	lsl data				;shift data register left to check the next bit
+000054 dfdc                      	rcall scl_low			;call SCL low function to complete the clocking
+000055 952a                      	dec counter				;decrease the counter which indicates how many bits left
+000056 f7a9                      	brne loop				;loop back through the process again until counter is 0
+000057 dfd7                      	rcall sda_high			;release SDA line for receiving the ACK from slave
+000058 dfda                      	rcall scl_high			;call SCL to send 9th pulse and wait for ACK
+000059 dfd7                      	rcall scl_low			;ready for continuation of data transfer unless a stop is called
+00005a dfd2                      	rcall sda_low
+00005b 9508                      	ret
+                                 
+                                 
+                                 	; ============================== Time Delay Subroutines =====================
+                                 
+                                 ; ---------------------------------------------------------------------------
+                                 ; Name:     delayTx1mS
+                                 ; Purpose:  provide a delay of (temp) x 1 mS
+                                 ; Entry:    (temp) = delay data
+                                 ; Exit:     no parameters
+                                 ; Notes:    the 8-bit register provides for a delay of up to 255 mS
+                                 ;           requires delay1mS
+                                 
+                                 delayTx1mS:
+00005c d003                          rcall    delay1mS                        ; delay for 1 mS
+00005d 950a                          dec     temp                            ; update the delay counter
+00005e f7e9                          brne    delayTx1mS                      ; counter is not zero
+                                 
+                                 ; arrive here when delay counter is zero (total delay period is finished)
+00005f 9508                          ret
+                                 
+                                 ; ---------------------------------------------------------------------------
+                                 ; Name:     delay1mS
+                                 ; Purpose:  provide a delay of 1 mS
+                                 ; Entry:    no parameters
+                                 ; Exit:     no parameters
+                                 ; Notes:    chews up fclk/1000 clock cycles (including the 'call')
+                                 
+                                 delay1mS:
+000060 93cf                      	push    YL                              ; [2] preserve registers
+000061 93df                          push    YH                              ; [2]
+000062 efc5                      	ldi     YL,low(((fclk/1000)-18)/4)     ; [1] delay counter              (((fclk/1000)-18)/4)
+000063 e0d0                          ldi     YH,high(((fclk/1000)-18)/4)    ; [1]                            (((fclk/1000)-18)/4)
+                                 
+                                 delay1mS_01:
+000064 50c1                          subi    YL,low(1)						; [2] update the the delay counter
+000065 40d0                      	sbci    YH,high(1)
+000066 f7e9                          brne    delay1mS_01                     ; [2] delay counter is not zero
+                                 
+                                 ; arrive here when delay counter is zero
+000067 91df                          pop     YH                              ; [2] restore registers
+000068 91cf                          pop     YL                              ; [2]
+000069 9508                      	ret                                     ; [4]
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ms250:							; 250ms dealy routine
+00006a ef0a
+00006b dff0                      	millis 250
+00006c 9508                      	ret
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 OLED_INIT:
+00006d eee0                      	ldi ZL,low(2*OLED_INIT_BYTES)		;load low value of OLED_INIT_BYTES address to ZL
+00006e e0f0                      	ldi ZH,high(2*OLED_INIT_BYTES)		;load high value of OLED_INIT_BYTES address to ZH
+00006f 9508                      	ret											;return from subroutine
+                                 OLED_INIT_BYTES:
+000070 1fa8
+000071 0120
+000072 0021
+000073 227f
+000074 0300
+000075 02da
+000076 148d
+c:\users\manama\Documents\Atmel Studio\7.0\ATTINY13KTYPEthermometer1\ATTINY13KTYPEthermometer1\main.asm(240): warning: .cseg .db misalignment - padding zero byte
+000077 00af                      .DB 0xA8,0x1f,0x20,0x01,0x21,0x00,0x7F,0x22,0x00,0x03,0xDA,0x02,0x8D,0x14,0xAF
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+                                 ;  0xA8, 0x1F,       // set multiplex (HEIGHT-1): 0x1F for 128x32, 0x3F for 128x64 ; 
+                                 ;  0x22, 0x00, 0x03, // set min and max page									   ;
+                                 ;  0x20, 0x01,       // set vertical memory addressing mode	
+                                 ;  0x21, 0x00,0x7F   // start column 0 end column 127					   ;
+                                 ;  0xDA, 0x02,       // set COM pins hardware configuration to sequential          ;
+                                 ;  0x8D, 0x14,       // enable charge pump                                         ;
+                                 ;  0xAF,             // switch on OLED                                             ;
+                                 ;  0xA1, 0xC8        // flip the screen                                            ;
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;I2C_COMMAND_WRITE  ;function to write a stream of commands to the OLED
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 i2c_command_write:
+000078 dfbc                      	rcall i2c_init			;
+000079 dfc2                      	rcall i2c_start
+00007a e010                      	ldi data,command		;command value is 0x00
+00007b dfcf                      	rcall i2c_write
+00007c 9508                      	ret
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;I2C_DATA_WRITE	  ;function to write a stream of data to the OLED
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 i2c_data_write:
+00007d dfb7                      	rcall i2c_init
+00007e dfbd                      	rcall i2c_start
+00007f e410                      	ldi data,data_cmd			;data command is 0x40
+000080 dfca                      	rcall i2c_write
+000081 9508                      	ret
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;ARRAY READ FUNCTION registers-r19/r20 ;array_length = r19,array_byte = r20 
+                                 ;dependency = use ldi array_length,( number of bytes ) prior to rcall array_read
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 array_read:
+                                 loop2:
+000082 9145                      	lpm array_byte,Z+
+000083 2f14                      	mov data,array_byte
+000084 dfc6                      	rcall i2c_write
+000085 953a                      	dec array_length
+000086 f7d9                      	brne loop2
+000087 9508                      	ret
+                                 
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;PRINT function   uses registers- temp1,temp,array_byte,ASCII,array_length
+                                 ;characters to be printed has to be passed into register ASCII as ASCII values
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 printchar:	
+000088 325e                      	cpi ASCII,'.'		; decimal
+000089 f029                      	breq decimal1
+00008a 3453                      	cpi ASCII,'C'		; C
+00008b f049                      	breq letterC
+00008c 3250                      	cpi ASCII,' '		; decimal
+00008d f021                      	breq spacee
+00008e c009                      	rjmp print
+                                 decimal1:
+00008f e2ec                      	ldi ZL,low(2*fontdecimal)	;attiny10 doesnt allow direct flash read,should access via SRAM address starting at 0x4000 as per data sheet
+000090 e0f2                      	ldi ZH,high(2*fontdecimal)
+000091 c011                      	rjmp ASCII0
+                                 spacee:
+000092 e3ec                      	ldi ZL,low(2*fontspace)		;attiny10 doesnt allow direct flash read,should access via SRAM address starting at 0x4000 as per data sheet
+000093 e0f2                      	ldi ZH,high(2*fontspace)
+000094 c00e                      	rjmp ASCII0
+                                 letterC:
+000095 e4ec                      	ldi ZL,low(2*fontC)			;attiny10 doesnt allow direct flash read,should access via SRAM address starting at 0x4000 as per data sheet
+000096 e0f2                      	ldi ZH,high(2*fontC)
+000097 c00b                      	rjmp ASCII0
+                                 print:
+000098 e8ec                      	ldi ZL,low(2*font0)			;attiny10 doesnt allow direct flash read,should access via SRAM address starting at 0x4000 as per data sheet
+000099 e0f1                      	ldi ZH,high(2*font0)
+00009a e340                      	ldi array_byte,0x30   		;hex value of first ASCII caharacter in font aray is 0x30 .subtract start value from ASCII value returned from ASCII_CONVERTER to know the position of character in the array
+00009b 1b54                      	sub ASCII,array_byte		;result of subtraction will be position of first byte of the character
+00009c f031                      	breq ASCII0					;if the result is 0 go to label ASCII0 and print 6 bytes which is a space (0x20 = space in the font array,1st character)
+00009d 2700                      	clr temp					;clear temp for counting
+                                 multiply:
+00009e 5fe0                      	subi r30,low(-16)			;adding immediate not suppported. immediate extends beyond 8bit.using subi & sbci with -ve number will do & loading with hi &lo will propogate carry.
+00009f 4fff                      	sbci r31,high(-16)
+0000a0 9503                      	inc temp					;counter increased on each iteration
+0000a1 1705                      	cp temp,ASCII				;counter is compared to value in ASCII register(start address of the array row)
+0000a2 f7d9                      	brne multiply				;if the atart address not reached loop back through the code from label "multiply"
+                                 ASCII0:
+0000a3 dfd9                      	rcall i2c_data_write		;call function to initiate data write which will transmit data write command before transfer of data array
+0000a4 e130                      	ldi array_length,16			;specify array length of 6 as six bytes make 1 character.5 as in the array below and as mentioned above 0 padded by assembler. if stored bytes are not even assembler will add 0 byte to align code
+0000a5 d002                      	rcall array_read2			;call array read function which writes the bytes 1 after another in a sequence which ahs i2c write function included
+0000a6 df9a                      	rcall i2c_stop				;stop i2c transfer
+0000a7 9508                      	ret
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;array_read2   - routine to read fonts from arry and double the size 16x8  = 32x16
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 array_read2:
+                                 loop12:
+0000a8 9145                      	lpm array_byte,Z+			;load array_byte register with font pointed by Z
+0000a9 d007                      	rcall double				;call routine double to stretch font to double size,stretched font in r23 and r24
+0000aa 2f17                      	mov data,r23				;move r23 to data
+0000ab df9f                      	rcall i2c_write				;transmit first half of stretched font
+0000ac 2f18                      	mov data,r24				;move r24 to data
+0000ad df9d                      	rcall i2c_write				;transmit second half of stretched font
+                                 ;	ldi data,0x00				;commented out code doubles horizontally but the display can show only 4 characters, implemented only vertically stretched font
+                                 ;	rcall i2c_write
+                                 ;	ldi data,0x00
+                                 ;	rcall i2c_write
+                                 ;	mov data,r23
+                                 ;	rcall i2c_write
+                                 ;	mov data,r24
+                                 ;	rcall i2c_write
+                                 ;	clr r23
+                                 ;	clr r24
+0000ae 953a                      	dec array_length			;decrease array_length register by 1 from 16 to 0 each iteration
+0000af f7c1                      	brne loop12					;repeat until all array elements are stretched and written to OLED
+0000b0 9508                      	ret							;return to caller
+                                 	
+                                 double:							;routine stretches the text by doubling all the bits in the byte to a word
+0000b1 2777                      	clr r23						;clear the working register
+0000b2 2788                      	clr r24						;clear the working register
+0000b3 e0b8                      	ldi r27,8					;no of bits in each byte loaded in counter
+0000b4 2f04                      	mov r16,array_byte			;move font loaded by Z in array_byte inside array_read2 routine to r16 for stretching
+                                 dloop:
+0000b5 0f00                      	lsl r16						;left shift the msb of r16 into carry
+0000b6 f038                      	brcs bit1					;if carry set branch to bit1 label to double bit 1
+0000b7 1f77                      	rol r23						;reach here if carry not set hence bit is 0, we will stretch by adding 1 more 0, shift 0 in carry to lsb of r23
+0000b8 1f88                      	rol r24						;rotate left r24, msb of r23 shifted into carry in rol r23 will be shifted into lsb of r24
+0000b9 1f77                      	rol r23						; as we are doubling 0 ,shift another 0 from carry to r23
+0000ba 1f88                      	rol r24						; shift 0 to r24
+0000bb 95ba                      	dec r27						; decrease counter
+0000bc f7c1                      	brne dloop					; if counter not 0 , repeat for all bits in the loaded font array byte
+0000bd 9508                      	ret							; return to caller
+                                 bit1:
+0000be 1f77                      	rol r23						;reach here if carry set, shift 1 from carry to r23
+0000bf 1f88                      	rol r24						;shift r24 left through carry
+0000c0 9408                      	sec							;set carry to 1 tp double the bit
+0000c1 1f77                      	rol r23						;shift 1 from carry to r23
+0000c2 1f88                      	rol r24						;shift r24 left through carry
+0000c3 95ba                      	dec r27						; decrease counter
+0000c4 f781                      	brne dloop					; if counter not 0 , repeat for all bits in the loaded font array byte
+0000c5 9508                      	ret							; return to caller
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;FONTS   fonts below 5bytes ,assembler will add one byte of padding with 0. hence array lenth =6
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 font0:
+0000c6 0000
+0000c7 0fe0
+0000c8 1010
+0000c9 2008
+0000ca 2008
+0000cb 1010
+0000cc 0fe0
+0000cd 0000                      .db 0x00,0x00, 0xE0,0x0f, 0x10,0x10, 0x08,0x20, 0x08,0x20, 0x10,0x10, 0xE0,0x0f, 0x00,0x00 //0
+                                 font1:
+0000ce 0000
+0000cf 2010
+0000d0 2010
+0000d1 3ff8
+0000d2 2000
+0000d3 2000
+0000d4 0000
+0000d5 0000                      .DB 0x00,0x00, 0x10,0x20, 0x10,0x20, 0xF8,0x3F, 0x00,0x20, 0x00,0x20, 0x00,0x00, 0x00,0x00// 1 // 1
+                                 font2:
+0000d6 0000
+0000d7 3070
+0000d8 2808
+0000d9 2408
+0000da 2208
+0000db 2188
+0000dc 3070
+0000dd 0000                      .db 0x00,0X00, 0x70,0X30, 0x08,0X28, 0x08,0X24, 0x08,0X22, 0x88,0X21, 0x70,0X30, 0x00,0X0 // 2
+                                 font3:
+0000de 0000
+0000df 1830
+0000e0 2008
+0000e1 2088
+0000e2 2088
+0000e3 1148
+0000e4 0e30
+0000e5 0000                      .DB 0x00,0X00, 0x30,0X18, 0x08,0X20, 0x88,0X20, 0x88,0X20, 0x48,0X11, 0x30,0X0E, 0x00,0X00 // 3
+                                 font4:
+0000e6 0000
+0000e7 0700
+0000e8 04c0
+0000e9 2420
+0000ea 2410
+0000eb 3ff8
+0000ec 2400
+0000ed 0000                      .DB 0x00,0X00, 0x00,0X07, 0xC0,0X04, 0x20,0X24, 0x10,0X24, 0xF8,0X3F, 0x00,0X24, 0x00,0X00 //0
+                                 font5:
+0000ee 0000
+0000ef 19f8
+0000f0 2108
+0000f1 2088
+0000f2 2088
+0000f3 1108
+0000f4 0e08
+0000f5 0000                      .DB 0x00,0x00, 0xF8,0x19, 0x08,0x21, 0x88,0x20, 0x88,0x20, 0x08,0x11, 0x08,0x0e, 0x00,0x00 // 5
+                                 font6:
+0000f6 0000
+0000f7 0fe0
+0000f8 1110
+0000f9 2088
+0000fa 2088
+0000fb 1118
+0000fc 0e00
+0000fd 0000                      .DB 0x00,0x00, 0xE0,0x0f, 0x10,0x11, 0x88,0x20, 0x88,0x20, 0x18,0x11, 0x00,0x0e, 0x00,0x00 // 6 22
+                                 font7:
+0000fe 0000
+0000ff 0038
+000100 0008
+000101 3f08
+000102 00c8
+000103 0038
+000104 0008
+000105 0000                      .DB 0x00,0x00, 0x38,0x00, 0x08,0x00, 0x08,0x3f, 0xC8,0x00, 0x38,0x00, 0x08,0x00, 0x00,0x00 // 7 23
+                                 font8:
+000106 0000
+000107 1c70
+000108 2288
+000109 2108
+00010a 2108
+00010b 2288
+00010c 1c70
+00010d 0000                      .DB 0x00,0x00, 0x70,0x1c, 0x88,0x22, 0x08,0x21, 0x08,0x21, 0x88,0x22, 0x70,0x1c, 0x00,0x00//8 24
+                                 font9:
+00010e 0000
+00010f 00e0
+000110 3110
+000111 2208
+000112 2208
+000113 1110
+000114 0fe0
+000115 0000                      .DB 0x00,0x00, 0xE0,0x00, 0x10,0x31, 0x08,0x22, 0x08,0x22, 0x10,0x11, 0xE0,0x0f, 0x00,0x00 // 9 25
+                                 fontdecimal:
+000116 0000
+000117 3000
+000118 3000
+000119 0000
+00011a 0000
+00011b 0000
+00011c 0000
+00011d 0000                      .db 0x00,0x00, 0x00,0x30, 0x00,0x30, 0x00,0x00, 0x00,0x00, 0x00,0x00, 0x00,0x00, 0x00,0x00// .
+                                 fontspace:
+00011e 0000
+00011f 0000
+000120 0000
+000121 0000
+000122 0000
+000123 0000
+000124 0000
+000125 0000                      .db 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00                    
+                                 fontC:
+000126 07c0
+000127 1830
+000128 2008
+000129 2008
+00012a 2008
+00012b 1008
+00012c 0838
+00012d 0000                      .db 0xC0,0x07, 0x30,0x18, 0x08,0x20, 0x08,0x20, 0x08,0x20, 0x08,0x10, 0x38,0x08, 0x00,0x00// C
+                                 
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;CLEAR_OLED     registers array_byte/array_length used  writes 128*4 0's to OLED
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 clear_OLED:
+00012e d018                      	rcall ccursor
+00012f df4d                      	rcall i2c_data_write
+000130 e0c0                      	ldi YL,low(512)
+000131 e0d2                      	ldi YH,high(512)
+                                 lll:
+000132 e010                      	ldi data,0x00
+000133 df17                      	rcall i2c_write
+000134 50c1                      	subi YL,1
+000135 40d0                      	sbci YH,0
+000136 f7d9                      	brne lll
+000137 9508                      	ret
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;set_cursor   routine to set cursor at required coordinates   use MACRO  eg  cursor 0 ,10
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 set_cursor:
+                                 ;;;;;;;;;;;;;;;;;
+                                 ;set_row        
+                                 ;;;;;;;;;;;;;;;;;
+000138 df3f                      	rcall i2c_command_write
+000139 e212                      	ldi data, 0x22			;oled command to set row
+00013a df10                      	rcall i2c_write
+00013b 2f18                      	mov data,posy			;row value in posY supplied to macro (starting point of cursor)
+00013c df0e                      	rcall i2c_write
+00013d e013                      	ldi data,3				;max travel of cursor (here max is 3rd page = 3)
+00013e df0c                      	rcall i2c_write
+                                 ;;;;;;;;;;;;;;;;
+                                 ;set_column    
+                                 ;;;;;;;;;;;;;;;;
+00013f e211                      	ldi data, 0x21			;oled command to set column
+000140 df0a                      	rcall i2c_write
+000141 2f17                      	mov data,posx			;column value in posx supplied to macro
+000142 df08                      	rcall i2c_write
+000143 e71f                      	ldi data,0x7f			;column begins at 0 to 127 as end in each row. we will choose column end as 127=0x7f
+000144 df06                      	rcall i2c_write
+000145 defb                      	rcall i2c_stop
+000146 9508                      	ret
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ;; ccursor    routine to place cursor at 0,0 coordinates
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ccursor:
+000147 e080
+000148 e070
+000149 dfee                      	cursor 0,0
+00014a 9508                      	ret
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 zero_suppress:
+00014b 9100 0064                 	lds r16,OLdigit			; load r16 with contents of SRAM OLdigit
+00014d 3300                      	cpi r16,0x30			; check if it is ascii 0
+00014e f009                      	breq blank				; if 0 branch to label blank to fill with space character
+00014f 9508                      	ret
+                                 blank:
+000150 e200                      	ldi r16,' '				; load space character in r16
+000151 9300 0064                 	sts OLdigit,r16			; store in OLdigit sram
+000153 9100 0065                 	lds r16,TTdigit			; load from sram TTdigit to r16
+000155 3300                      	cpi r16,0x30			; compare contents with ascii0
+000156 f451                      	brne exit1				; if not ascii 0 exit procedure
+000157 e200                      	ldi r16,' '				; load r16 with space
+000158 9300 0065                 	sts TTdigit,r16			; store in TTdigit if it was 0
+00015a 9100 0066                 	lds r16,Tdigit			; load r16 with contents of Tdigit sram
+00015c 3300                      	cpi r16,0x30			; compare with ascii 0
+00015d f419                      	brne exit1				; if not ascii 0 exit procedure
+00015e e200                      	ldi r16,' '				; load r16 with space
+00015f 9300 0066                 	sts Tdigit,r16			; store in Tdigit if it was 0
+                                 exit1:
+000161 9508                      	ret						; return to caller
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 MAXREAD:
+000162 e190                      	ldi r25,16				; load r25 with 16, 16 clock cycles to spit out 16bit value
+000163 98c3                      	cbi PORTB,PORTB3		; SS low ,clear bit3
+                                 rloop:
+000164 9ac4                      	sbi PORTB,PORTB4		; SCK HI ,set BIT4,
+000165 0000                      	nop						; 1 cycle ,1us delay
+000166 0000                      	nop						; 1 cycle ,1us delay
+000167 0000                      	nop						; 1 cycle ,1us delay
+000168 0000                      	nop						; 1 cycle ,1us delay
+000169 9488                      	clc						; clear carry flag
+00016a 99b1                      	sbic PINB,PINB1 		; if MISO pin is low skip next instruction
+00016b 9408                      	sec						; set carry flag
+00016c 1f33                      	rol r19					; rotate through carray left r19, carry is loaded into lsb of r19
+00016d 1f44                      	rol r20					; rotate through carray left r20, the bit shifted out of r19 is looped through r20
+00016e 98c4                      	cbi PORTB,PORTB4		; SCK low ,clear bit4 ,
+00016f 959a                      	dec r25					; decrease counter
+000170 f799                      	brne rloop				; loop till r25 is 0 , 16 clocks
+000171 9ac3                      	sbi PORTB,PORTB3		; SS HI ,set BIT3,
+000172 9508                      	ret						; return to caller
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 ; 1) (MAXREAD result)x(25) = temprature in degree centigrade
+                                 ; each least significant bit of the result equals 0.25 degree as per MAX6675 data sheet , all 0 = 0 degree , all 1's = 0xfff =1023.75
+                                 ; eg (0xfff) x (25) = 102375 . we place decimal point between 100th and tenth place in OLED and make it 1023.75
+                                 ; instead of multiplying with 0.25 , we do multiply with 25 and place a decimal point in OLED between 100th and tenth position 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 TEMP_CALC:
+000173 2466                      		clr r6					; clear r6
+000174 2477                      		clr r7					; clear r7 
+000175 2488                      		clr r8					; clear r8
+000176 2499                      		clr r9					; clear r9
+000177 e109                      		ldi r16,25				; load r16 with multiplier 25 (0.25 degreeC), we multiply max6675 result with  0.25 degree
+                                 calcu:
+000178 0e73                      		add r7,r19				; add r7 with r19 (low byte of max6675 result)
+000179 1e84                      		adc r8,r20				; add with carry r8 and r20 (high byte of MAX6675 result)
+00017a 1c96                      		adc r9,r6				; add with carry r9 with r6 ( r6 has 0 in it)
+00017b 950a                      		dec r16					; decrease r16 , we add result with itself 25 times to effect result x 25 = final temprature
+00017c f7d9                      		brne calcu				; loop till r16 is 0 , 25 additions done
+00017d 9508                      		ret						; return to caller
+                                 
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 ascii_convert:
+00017e e300                      	ldi r16,0x30				; ascii 0
+00017f 9300 0064                 	sts OLdigit,r16				; store in SRAM
+000181 9300 0065                 	sts TTdigit,r16				; store in SRAM
+000183 9300 0066                 	sts Tdigit,r16				; store in SRAM
+000185 9300 0067                 	sts Hdigit,r16				; store in SRAM
+000187 9300 0069                 	sts tendigit,r16			; store in SRAM
+000189 9300 006a                 	sts ONE,r16					; store in SRAM
+                                 ascii_loop:
+00018b ea00                      	ldi r16,low(100000)			; compare value 100000
+00018c 2e20                      	mov r2,r16					; low byte of 100000 in r2
+00018d e806                      	ldi r16,byte2(100000)
+00018e 2e30                      	mov r3,r16					; byte2 of 100000 in r3
+00018f e001                      	ldi r16,byte3(100000)
+000190 2e40                      	mov r4,r16					; byte3 of 100000 in r4
+000191 1472                      	cp  r7,r2					; compare result with low byte
+000192 0483                      	cpc r8,r3					; compare with carry with byte2
+000193 0494                      	cpc r9,r4					; compare with carry with byte3
+000194 f548                      	brsh Dby100000				; if greater or equal than 100000 branch to divide by 100000
+000195 e100                      	ldi r16,low(10000)			; compare value 10000
+000196 2e20                      	mov r2,r16					; low byte of 10000 in r2
+000197 e207                      	ldi r16,byte2(10000)
+000198 2e30                      	mov r3,r16					; high byte of 10000 in r3
+000199 e000                      	ldi r16,byte3(10000)
+00019a 2e40                      	mov r4,r16
+00019b 1472                      	cp  r7,r2					; compare result with 10000
+00019c 0483                      	cpc r8,r3					; compare result with 10000
+00019d f550                      	brsh Dby10000				; if greater or equal to 10000 branch to divide by 10000
+00019e ee08                      	ldi r16,low(1000)			; load compare value 1000
+00019f 2e20                      	mov r2,r16					; low compare value 1000 in r2
+0001a0 e003                      	ldi r16,byte2(1000)
+0001a1 2e30                      	mov r3,r16					; high of compare value 1000 in r3
+0001a2 e000                      	ldi r16,byte3(1000)
+0001a3 2e40                      	mov r4,r16
+0001a4 1472                      	cp  r7,r2					; compare low byte of result with low of 1000
+0001a5 0483                      	cpc r8,r3					; compare with carry to high byte of 1000
+0001a6 f550                      	brsh Dby1000				; if greater or equal to 1000 branch to divide by thousand
+0001a7 e604                      	ldi r16,low(100)			; load compare value low byte of 100
+0001a8 2e20                      	mov r2,r16					; copy to r2
+0001a9 e000                      	ldi r16,byte2(100)			; load compare value high byte of 100
+0001aa 2e30                      	mov r3,r16					; copy to r3
+0001ab e000                      	ldi r16,byte3(100)
+0001ac 2e40                      	mov r4,r16
+0001ad 1472                      	cp  r7,r2					; compare low byte of result to low of 100
+0001ae 0483                      	cpc r8,r3					; compare with carry the result to high byte of 100
+0001af f550                      	brsh Dby100					; if compared result is greater than or equal to 100 branch to divide by 100
+0001b0 e00a                      	ldi r16,low(10)				; load ccompare value 10
+0001b1 2e20                      	mov r2,r16					; load compare value in r2
+0001b2 e000                      	ldi r16,byte2(10)			; load high byte of 10
+0001b3 2e30                      	mov r3,r16					; load compare value high byte
+0001b4 e000                      	ldi r16,byte3(10)
+0001b5 2e40                      	mov r4,r16
+0001b6 1472                      	cp  r7,r2					; compare result to 10
+0001b7 0483                      	cpc r8,r3					; compare wit carry if any
+0001b8 f550                      	brsh Dby10					; if compared result is greater than or equal to 10 branch to divide by 100
+0001b9 e300                      	ldi r16,0x30				; load ascii 0 in r16
+0001ba 0d07                      	add r16,r7					; add ascii0 with remaining value in r7
+0001bb 9300 006a                 	sts ONE,r16					; store the single digit ascii value in SRAM register ONE
+0001bd 9508                      	ret
+                                 
+                                 Dby100000:						; divide by 100000
+0001be 2700                      	clr r16						; clear r16 counter
+0001bf 1872                      	sub r7,r2					; subtract lsb of 100000 from result
+0001c0 0883                      	sbc r8,r3					; subtract with carry 2nd byte of 100000
+0001c1 0894                      	sbc r9,r4					; subtract with carry 3rd byte of 100000
+0001c2 9100 0064                 	lds r16,OLdigit				; load r16 with value in OLdigit, ascii 0 (0x30) was loaded in SRAM previously
+0001c4 9503                      	inc r16						; increase r16
+0001c5 9300 0064                 	sts OLdigit,r16				; store back r16 in OLdigit
+0001c7 cfc3                      	rjmp ascii_loop				; jump back to ascii_loop to find the remaining digits
+                                 Dby10000:						; divide by 10000
+0001c8 1872                      	sub r7,r2					; subtract lsb of 10000 from result
+0001c9 0883                      	sbc r8,r3					; subtract with carry 2nd byte of 10000
+0001ca 0894                      	sbc r9,r4					; subtract with carry 3rd byte of 10000
+0001cb 9100 0065                 	lds r16,TTdigit				; load r16 with value in TTdigit, ascii 0 (0x30) was loaded in SRAM previously
+0001cd 9503                      	inc r16						; increase r16
+0001ce 9300 0065                 	sts TTdigit,r16				; store back r16 in OLdigit
+0001d0 cfba                      	rjmp ascii_loop				; jump back to ascii_loop to find the remaining digits
+                                 Dby1000:						; divide by 1000
+0001d1 1872                      	sub r7,r2					; subtract 1000
+0001d2 0883                      	sbc r8,r3					; subtract 1000
+0001d3 0894                      	sbc r9,r4					; subtract 1000
+0001d4 9100 0066                 	lds r16,Tdigit				; copy Tdigit to r16
+0001d6 9503                      	inc r16						; increase r16
+0001d7 9300 0066                 	sts Tdigit,r16				; store back in SRAM
+0001d9 cfb1                      	rjmp ascii_loop				; loop back
+                                 Dby100:							; divide by 100
+0001da 1872                      	sub r7,r2					; subtract 100
+0001db 0883                      	sbc r8,r3					; subtract 100
+0001dc 0894                      	sbc r9,r4					; subtract 100
+0001dd 9100 0067                 	lds r16,Hdigit
+0001df 9503                      	inc r16
+0001e0 9300 0067                 	sts Hdigit,r16
+0001e2 cfa8                      	rjmp ascii_loop
+                                 Dby10:							; divide by 10
+0001e3 1872                      	sub r7,r2					; subtract 10
+0001e4 0883                      	sbc r8,r3					; subtract 10
+0001e5 0894                      	sbc r9,r4					; subtract 10
+0001e6 9100 0069                 	lds r16,tendigit
+0001e8 9503                      	inc r16
+0001e9 9300 0069                 	sts tendigit,r16
+0001eb cf9f                      	rjmp ascii_loop
+                                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                 
+                                 
+
+
+RESOURCE USE INFORMATION
+------------------------
+
+Notice:
+The register and instruction counts are symbol table hit counts,
+and hence implicitly used resources are not counted, eg, the
+'lpm' instruction without operands implicitly uses r0 and z,
+none of which are counted.
+
+x,y,z are separate entities in the symbol table and are
+counted separately from r26..r31 here.
+
+.dseg memory usage only counts static data declared with .byte
+
+"ATtiny13A" register use summary:
+x  :   0 y  :   1 z  :   2 r0 :   0 r1 :   0 r2 :  15 r3 :  15 r4 :  11 
+r5 :   0 r6 :   2 r7 :  13 r8 :  12 r9 :   8 r10:   2 r11:   0 r12:   0 
+r13:   0 r14:   0 r15:   0 r16:  96 r17:  15 r18:   2 r19:   9 r20:  11 
+r21:   6 r22:   0 r23:   9 r24:   9 r25:   5 r26:   0 r27:   3 r28:   7 
+r29:   7 r30:   6 r31:   6 
+Registers used: 24 out of 35 (68.6%)
+
+"ATtiny13A" instruction use summary:
+.lds  :   0 .sts  :   0 adc   :   2 add   :   2 adiw  :   0 and   :   0 
+andi  :   3 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+brcc  :   0 brcs  :   1 break :   0 breq  :   5 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
+brne  :  14 brpl  :   0 brsh  :   5 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 cbi   :   6 cbr   :   0 clc   :   1 
+clh   :   0 cli   :   0 cln   :   0 clr   :   8 cls   :   0 clt   :   0 
+clv   :   0 clz   :   0 com   :   0 cp    :   6 cpc   :   6 cpi   :   6 
+cpse  :   0 dec   :   9 eor   :   0 icall :   0 ijmp  :   0 in    :   2 
+inc   :   6 ld    :   1 ldd   :   0 ldi   :  62 lds   :   8 lpm   :   2 
+lsl   :   2 lsr   :   3 mov   :  24 movw  :   0 neg   :   0 nop   :   6 
+or    :   0 ori   :   0 out   :   3 pop   :   2 push  :   2 rcall :  55 
+ret   :  28 reti  :   0 rjmp  :  10 rol   :  10 ror   :   3 sbc   :  10 
+sbci  :   3 sbi   :   7 sbic  :   1 sbis  :   0 sbiw  :   0 sbr   :   0 
+sbrc  :   1 sbrs  :   0 sec   :   2 seh   :   0 sei   :   0 sen   :   0 
+ser   :   0 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 
+spm   :   0 st    :   0 std   :   0 sts   :  18 sub   :   6 subi  :   3 
+swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 41 out of 105 (39.0%)
+
+"ATtiny13A" memory use summary [bytes]:
+Segment   Begin    End      Code   Data   Used    Size   Use%
+---------------------------------------------------------------
+[.cseg] 0x000000 0x0003d8    760    224    984    1024  96.1%
+[.dseg] 0x000060 0x00006d      0     13     13      64  20.3%
+[.eseg] 0x000000 0x000000      0      0      0      64   0.0%
+
+Assembly complete, 0 errors, 1 warnings

@@ -1,0 +1,122 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATtiny804"</DEVICE>
+ <WORKING_DIR>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.3.229\avrasm\inc\tn804def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\Debug\804thermometerKTYPE.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>804thermometerKTYPE.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>804thermometerKTYPE.map</FILE>
+  <FILE>804thermometerKTYPE.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <data1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>53</LINE></data1>
+  <data2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>54</LINE></data2>
+  <data3><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>55</LINE></data3>
+  <data4><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>56</LINE></data4>
+  <minussign><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>57</LINE></minussign>
+  <OLdigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>58</LINE></OLdigit>
+  <TTdigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>59</LINE></TTdigit>
+  <Tdigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>60</LINE></Tdigit>
+  <Hdigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>61</LINE></Hdigit>
+  <point><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>62</LINE></point>
+  <tendigit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>63</LINE></tendigit>
+  <ONE><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>64</LINE></ONE>
+  <SPA><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>65</LINE></SPA>
+  <CEE><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>66</LINE></CEE>
+  <reset><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>76</LINE></reset>
+  <MHZ10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>132</LINE></MHZ10>
+  <TWI_INIT><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>175</LINE></TWI_INIT>
+  <oledinit><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>330</LINE></oledinit>
+  <CLEAR_OLED><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>272</LINE></CLEAR_OLED>
+  <read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>92</LINE></read>
+  <MAXREAD><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>139</LINE></MAXREAD>
+  <sensor_error><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>122</LINE></sensor_error>
+  <TEMP_CALC><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>613</LINE></TEMP_CALC>
+  <ascii_convert><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>654</LINE></ascii_convert>
+  <zero_suppress><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>750</LINE></zero_suppress>
+  <XYX><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>107</LINE></XYX>
+  <set_cursor><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>298</LINE></set_cursor>
+  <printloop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>113</LINE></printloop>
+  <printchar><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>364</LINE></printchar>
+  <delayYx1mS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>521</LINE></delayYx1mS>
+  <SS_LO><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>163</LINE></SS_LO>
+  <rloop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>142</LINE></rloop>
+  <SCK_HI><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>160</LINE></SCK_HI>
+  <us10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>606</LINE></us10>
+  <SCK_LO><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>157</LINE></SCK_LO>
+  <SS_HI><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>166</LINE></SS_HI>
+  <TWI_START><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>188</LINE></TWI_START>
+  <WAIT_WIF><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>244</LINE></WAIT_WIF>
+  <TWI_STOP><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>238</LINE></TWI_STOP>
+  <TWI_WRITE><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>196</LINE></TWI_WRITE>
+  <TWI_READ><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>205</LINE></TWI_READ>
+  <WAIT_RIF><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>251</LINE></WAIT_RIF>
+  <BYYTE><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>230</LINE></BYYTE>
+  <loop_read><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>224</LINE></loop_read>
+  <OLED_INIT_BYTES><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>259</LINE></OLED_INIT_BYTES>
+  <TX_address><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>293</LINE></TX_address>
+  <oled_data_write><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>353</LINE></oled_data_write>
+  <cleardataOLED><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>278</LINE></cleardataOLED>
+  <time2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>280</LINE></time2>
+  <time1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>282</LINE></time1>
+  <arrayread><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>322</LINE></arrayread>
+  <oled_command_write><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>345</LINE></oled_command_write>
+  <decimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>375</LINE></decimal>
+  <minus><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>379</LINE></minus>
+  <letterC><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>384</LINE></letterC>
+  <space><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>389</LINE></space>
+  <printnum><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>394</LINE></printnum>
+  <fontdecimal><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>500</LINE></fontdecimal>
+  <load0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>407</LINE></load0>
+  <fontminus><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>506</LINE></fontminus>
+  <fontC><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>504</LINE></fontC>
+  <fontspace><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>502</LINE></fontspace>
+  <font0><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>480</LINE></font0>
+  <multiply><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>401</LINE></multiply>
+  <font_write><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>415</LINE></font_write>
+  <fontarrayread><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>420</LINE></fontarrayread>
+  <double><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>446</LINE></double>
+  <dloop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>452</LINE></dloop>
+  <bit1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>463</LINE></bit1>
+  <font1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>482</LINE></font1>
+  <font2><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>484</LINE></font2>
+  <font3><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>486</LINE></font3>
+  <font4><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>488</LINE></font4>
+  <font5><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>490</LINE></font5>
+  <font6><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>492</LINE></font6>
+  <font7><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>494</LINE></font7>
+  <font8><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>496</LINE></font8>
+  <font9><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>498</LINE></font9>
+  <delay1mS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>551</LINE></delay1mS>
+  <delayTx1mS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>536</LINE></delayTx1mS>
+  <delay1mS_01><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>557</LINE></delay1mS_01>
+  <delayTx1uS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>574</LINE></delayTx1uS>
+  <delay10uS><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>589</LINE></delay10uS>
+  <us50><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>602</LINE></us50>
+  <direct><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>630</LINE></direct>
+  <XX><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>621</LINE></XX>
+  <div_count><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>623</LINE></div_count>
+  <NOINC><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>649</LINE></NOINC>
+  <ascii_loop><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>662</LINE></ascii_loop>
+  <Dby100000><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>706</LINE></Dby100000>
+  <Dby10000><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>715</LINE></Dby10000>
+  <Dby1000><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>723</LINE></Dby1000>
+  <Dby100><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>731</LINE></Dby100>
+  <Dby10><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>739</LINE></Dby10>
+  <blank><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>755</LINE></blank>
+  <exit1><FILE>C:\Users\Manama\Documents\Atmel Studio\7.0\804thermometerKTYPE\804thermometerKTYPE\main.asm</FILE><LINE>769</LINE></exit1>
+ </LABELS>
+</ASSEMBLER_INFO>
